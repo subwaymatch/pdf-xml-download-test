@@ -7,7 +7,8 @@ const { serverRuntimeConfig } = getConfig();
 
 export default (req, res) => {
   const xml = fs.readFileSync(
-    path.join(serverRuntimeConfig.PROJECT_ROOT, './files/delivery.xml')
+    path.resolve('./public/files/delivery.xml')
+    // path.join(serverRuntimeConfig.PROJECT_ROOT, './files/delivery.xml')
   );
 
   res.setHeader('Content-Type', 'text/xml');

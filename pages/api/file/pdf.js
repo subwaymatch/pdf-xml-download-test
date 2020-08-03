@@ -7,7 +7,8 @@ const { serverRuntimeConfig } = getConfig();
 
 export default (req, res) => {
   const pdfContent = fs.readFileSync(
-    path.join(serverRuntimeConfig.PROJECT_ROOT, './files/pdf-file.pdf')
+    path.resolve('./public/files/pdf-file.pdf')
+    // path.join(serverRuntimeConfig.PROJECT_ROOT, './files/pdf-file.pdf')
   );
 
   res.setHeader('Content-Type', 'application/pdf');
