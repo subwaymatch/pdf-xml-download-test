@@ -1,0 +1,53 @@
+<records>
+  <rec resultID="1">
+    <header shortDbName="bsh" longDbName="Business Source Elite" uiTerm="143894282">
+      <controlInfo>
+        <bkinfo />
+        <jinfo>
+          <jtl>Accounting Review</jtl>
+          <issn>00014826</issn>
+        </jinfo>
+        <pubinfo>
+          <dt year="2020" month="05" day="01">May2020</dt>
+          <vid>95</vid>
+          <iid>3</iid>
+        </pubinfo>
+        <confinfo />
+        <artinfo>
+          <ui type="doi">10.2308/accr-52587</ui>
+          <ppf>85</ppf>
+          <ppct>30</ppct>
+          <formats>
+            <fmt type="HTML Full Text" />
+            <fmt type="PDF" size="503KB" />
+          </formats>
+          <tig>
+            <atl>Bank Capital and Loan Monitoring.</atl>
+          </tig>
+          <aug>
+            <au>Bhat, Gauri</au>
+            <au>Desai, Hemang A.</au>
+          </aug>
+          <sug>
+            <subj type="thes">Bank capital</subj>
+            <subj type="thes">Loans</subj>
+            <subj type="thes">Professional relationships</subj>
+            <subj type="thes">Endogeneity (Econometrics)</subj>
+            <subj type="naics">Consumer Lending</subj>
+            <subj type="unclass">Vigilance (Psychology)</subj>
+            <subj type="unclass">Quality</subj>
+          </sug>
+          <ab>This paper empirically examines the association between bank capital and banks' monitoring effort. We use four proxies to measure the unobservable monitoring effort. Two of the proxies are based on loan quality (ex post outcomes of monitoring effort). The other two proxies are based on salary expense (ex ante proxies intended to capture the quality and quantity of labor input into monitoring effort). Using a bank and time fixed effects estimation, we find a positive association between bank capital and each of our measures of monitoring effort. We find that this association is more pronounced for smaller banks and banks that engage in higher levels of relationship lending. Numerous additional tests and robustness checks, including matched sample analysis and instrumental variable approach to address endogeneity, confirm our main findings. Overall, our evidence is consistent with the prediction in Mehran and Thakor (2011) that banks that keep higher capital monitor more. JEL Classifications: G21; G32; M41.</ab>
+          <pubtype>Academic Journal</pubtype>
+          <doctype>Article</doctype>
+        </artinfo>
+        <language code="eng">English</language>
+      </controlInfo>
+      <displayInfo>
+        <pLink>
+          <url>http://search.ebscohost.com.proxy2.library.illinois.edu/login.aspx?direct=true&amp;db=bsh&amp;AN=143894282</url>
+        </pLink>
+      </displayInfo>
+    </header>
+  </rec>
+</records>

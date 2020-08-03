@@ -1,50 +1,49 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Test PDF/XML Downloads</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+        <h1 className={styles.title}>PDF/XML Download Test</h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          This is a test with with separate links to PDF and XML files.
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+          {' '}
+          <a href="/api/file/pdf" className={styles.card}>
+            <h3>PDF File</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              This is a link to a PDF file without a{' '}
+              <code>Content-Disposition: attachment</code> header. Chrome will
+              open it using the browser's built-in PDF viewer.
+            </p>
+          </a>
+          <a href="/api/file/xml" className={styles.card}>
+            <h3>XML File</h3>
+            <p>
+              This is a link to a XML response without a{' '}
+              <code>Content-Disposition: attachment</code> header. Chrome will
+              open it using its built-in XML viewer.
+            </p>
+          </a>
+          <a href="/api/redirect/pdf" className={styles.card}>
+            <h3>Redirect to PDF file</h3>
+            <p>
+              This link will redirect requests to <code>/api/files/pdf</code>.
+            </p>
+          </a>
+          <a href="/api/redirect/xml" className={styles.card}>
+            <h3>Redirect to XML file</h3>
+            <p>
+              This link will redirect requests to <code>/api/files/xml</code>.
             </p>
           </a>
         </div>
@@ -61,5 +60,5 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
+  );
 }
