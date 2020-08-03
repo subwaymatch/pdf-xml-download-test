@@ -18,7 +18,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           {' '}
-          <a href="/api/file/pdf" className={styles.card}>
+          <a id="link-pdf" href="/api/file/pdf" className={styles.card}>
             <h3>PDF File</h3>
             <p>
               This is a link to a PDF file without a{' '}
@@ -26,7 +26,7 @@ export default function Home() {
               open it using the browser's built-in PDF viewer.
             </p>
           </a>
-          <a href="/api/file/xml" className={styles.card}>
+          <a id="link-xml" href="/api/file/xml" className={styles.card}>
             <h3>XML File</h3>
             <p>
               This is a link to a XML response without a{' '}
@@ -34,13 +34,13 @@ export default function Home() {
               open it using its built-in XML viewer.
             </p>
           </a>
-          <a href="/api/redirect/pdf" className={styles.card}>
+          <a id="redirect-pdf" href="/api/redirect/pdf" className={styles.card}>
             <h3>Redirect to PDF file</h3>
             <p>
               This link will redirect requests to <code>/api/files/pdf</code>.
             </p>
           </a>
-          <a href="/api/redirect/xml" className={styles.card}>
+          <a id="redirect-xml" href="/api/redirect/xml" className={styles.card}>
             <h3>Redirect to XML file</h3>
             <p>
               This link will redirect requests to <code>/api/files/xml</code>.
